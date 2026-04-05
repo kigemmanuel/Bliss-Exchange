@@ -4,6 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Bliss Exchange - Trade crypto with precision and radiance. Instant delivery, competitive rates, and 24/7 support. Buy and sell Bitcoin, Ethereum, Solana, and 50+ cryptocurrencies." />
+    <meta name="keywords" content="crypto exchange, buy bitcoin, sell ethereum, cryptocurrency trading, BTC, ETH, SOL, USDT" />
+    <meta name="author" content="Bliss Exchange" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Bliss Exchange | Precision Radiance in Crypto" />
+    <meta property="og:description" content="Trade crypto with precision and radiance. Instant delivery, competitive rates, and 24/7 support." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="logo.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bliss Exchange | Precision Radiance in Crypto" />
+    <meta name="twitter:description" content="Trade crypto with precision and radiance. Instant delivery, competitive rates, and 24/7 support." />
+    <meta name="twitter:image" content="logo.jpg" />
+    <link rel="icon" type="image/jpeg" href="logo.jpg" />
     <title>Bliss Exchange | Precision Radiance in Crypto</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
@@ -124,13 +137,14 @@
             alt="Bliss Exchange Logo"
             class="h-8 w-8 object-contain"
             data-alt="Minimalist abstract logo for a crypto exchange with geometric shapes in burnt orange and gold tones"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVRxaSoQxKhoYtz_oXPEMo3Qd0xDr-mjBLM0XDXcGwqLmt5tOiwq8CYysj9QMYTVYAxUKCr-rH47tRk1A8qd8CvhwGKEDqG8yzS-2dXa_AjlCtBNHk1tcS-bQSxBlWK7AKkyV92LvEqpGlYiAMv7b3MTGeLJ9nNElVStBrgzBfcKS3cLZ9q2jNnLGMIMdlx-FUJPsfgMBi6g53QYY6uQNt6hq6SQ1Ra335JvFbn_1g_lu70WLiwe-ku1KDaxV1ZhJ1Et-bxtA_vhA"
+            src="logo.jpg"
           />
           <span
             class="text-2xl font-bold tracking-tighter text-[#a13900] dark:text-[#ff793e] font-headline"
             >Bliss Exchange</span
           >
         </div>
+        <!-- Desktop Navigation Links -->
         <div class="hidden md:flex gap-8 items-center">
           <a
             class="font-headline font-bold text-sm tracking-tight text-[#a13900] border-b-2 border-[#feb700] pb-1 transition-colors duration-300"
@@ -147,20 +161,59 @@
             href="#coins"
             >Coins</a
           >
-          <a
-            class="font-headline font-bold text-sm tracking-tight text-[#5c5b5b] hover:text-[#a13900] transition-colors duration-300"
-            href="#contact"
-            >Contact</a
-          >
-          <button
-            class="ml-4 primary-gradient text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold text-sm tracking-tight scale-95 active:scale-90 transition-transform"
-          >
-            Get Started
-          </button>
+          <a href="#contact" class="hidden md:block ml-4">
+            <button
+              class="primary-gradient text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold text-sm tracking-tight scale-95 active:scale-90 transition-transform"
+            >
+              Contact Us
+            </button>
+          </a>
         </div>
-        <button class="md:hidden text-primary">
+        <!-- Mobile Navigation Button -->
+        <button class="md:hidden text-primary" id="mobileMenuBtn">
           <span class="material-symbols-outlined">menu</span>
         </button>
+      </div>
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-0 h-screen w-64 bg-surface-container-lowest shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-40 overflow-y-auto md:hidden"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-8">
+            <span class="text-lg font-bold text-[#a13900] font-headline">Menu</span>
+            <button id="closeMobileMenuBtn" class="text-primary">
+              <span class="material-symbols-outlined">close</span>
+            </button>
+          </div>
+          <nav class="space-y-4">
+            <a
+              href="#home"
+              class="block px-4 py-3 rounded-lg font-headline font-bold text-[#a13900] bg-secondary-container/30 hover:bg-secondary-container transition-colors"
+            >
+              Home
+            </a>
+            <a
+              href="#features"
+              class="block px-4 py-3 rounded-lg font-headline font-bold text-[#5c5b5b] hover:bg-surface-container transition-colors"
+            >
+              Features
+            </a>
+            <a
+              href="#coins"
+              class="block px-4 py-3 rounded-lg font-headline font-bold text-[#5c5b5b] hover:bg-surface-container transition-colors"
+            >
+              Coins
+            </a>
+            <a href="#contact">
+              <button
+                class="w-full mt-6 primary-gradient text-on-primary px-6 py-3 rounded-xl font-headline font-bold text-sm tracking-tight transition-transform hover:scale-105"
+              >
+                Contact Us
+              </button>
+            </a>
+          </nav>
+        </div>
       </div>
     </nav>
     <main>
@@ -203,20 +256,30 @@
               to empower your trading journey.
             </p>
             <div class="flex flex-wrap gap-4 pt-4">
-              <button
-                class="primary-gradient text-on-primary px-10 py-4 rounded-xl font-headline font-bold text-lg shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all flex items-center gap-2 group"
+              <a
+            class="font-headline font-bold text-sm tracking-tight text-[#5c5b5b] hover:text-[#a13900] transition-colors duration-300"
+            href="#contact"
+            >
+            <button
+              class="primary-gradient text-on-primary px-10 py-4 rounded-xl font-headline font-bold text-lg shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all flex items-center gap-2 group"
+            >
+              Start Trading
+              <span
+                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
               >
-                Start Trading
-                <span
-                  class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
-                  >arrow_forward</span
-                >
-              </button>
-              <button
-                class="bg-surface-container-low text-on-surface px-10 py-4 rounded-xl font-headline font-bold text-lg hover:bg-surface-container transition-colors"
-              >
-                View Markets
-              </button>
+            </button>
+          </a>
+          <a
+            class="font-headline font-bold text-sm tracking-tight text-[#5c5b5b] hover:text-[#a13900] transition-colors duration-300"
+            href="#coins"
+            >
+            <button
+              class="bg-surface-container-low text-on-surface px-10 py-4 rounded-xl font-headline font-bold text-lg hover:bg-surface-container transition-colors"
+            >
+              View coins
+            </button>
+          </a>
             </div>
           </div>
           <div class="relative">
@@ -227,7 +290,7 @@
                 alt="Crypto Interface"
                 class="w-full object-cover aspect-[4/5]"
                 data-alt="High-end cryptocurrency trading interface on a sleek smartphone screen resting on a clean white surface with warm afternoon shadows"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMd8_H6gjbUw958wR2iX0J0zOQHfAFoGNUdEXnTpRRPaOMd8yG1QL4X3cWfBhdUHkkfYJ44VNCfqrRATk4jsbhPMd_zYq7KZXjxbsfuwcvbiadCUDYNv8yM0Sq6FJO7LFMYXh6qyR-C6rXc1fMCWOeBZ8AcZFYocPjWmJZwjFgEYpRW51tqj10sgG-TB-4AViGjWkePhl_tLhyz_qfp86kfyFBz98CqaPQzyCUJiM8fO4CVj0HLjSxgcwgm0gVnF72HXaVLE9qmrw"
+                src="cover.jpg"
               />
               <div
                 class="absolute inset-0 noise-texture pointer-events-none"
@@ -251,16 +314,16 @@
                   <p
                     class="text-xs text-on-surface-variant font-bold uppercase tracking-wider"
                   >
-                    Top Gainer
+                    Active
                   </p>
-                  <p class="text-lg font-bold font-headline">SOL +12.4%</p>
+                  <p class="text-lg font-bold font-headline">24/7 ACTIVE</p>
                 </div>
               </div>
               <img
                 alt="Chart Detail"
                 class="rounded-lg h-16 w-full object-cover"
                 data-alt="A clean minimalist line graph showing an upward growth trend in vibrant orange against a neutral architectural background"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIFl6MPI5tuQFDsBuPTjaJOisUt7OYt8jQQO4z-6RHsmjxWDFIkUJyKU481hJQj8DQSPqg5eSDUbyAxz72GeiJZw3R5lxcmpuGkomHLlfsP6ZOZZurBPV8VQhls1px_nTQ5G-Tl5oNAxgJ_j2vMgIdTTaWivR6Mhi3EmyFYKU45w0MTkEX7uEu9s4qMv_ehdJ5CqMFX3mXVi4AgYw0F9Zu_v2US5BWIeyIYuej9PK5RRjCybEDplSmL_bLRR6zO-I5HvOY1HaEIyo"
+                src="cover2.jpg"
               />
             </div>
           </div>
@@ -399,40 +462,32 @@
             </h2>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            <!-- BTC -->
+            <!-- BNB -->
             <div
-              class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-primary transition-colors duration-500"
+              class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-yellow-500 transition-colors duration-500"
             >
               <div
-                class="w-16 h-16 rounded-full bg-[#f7931a]/10 flex items-center justify-center mb-4 group-hover:bg-white/20"
+                class="w-16 h-16 rounded-full bg-[#f3ba2f]/10 flex items-center justify-center mb-4 group-hover:bg-white/20"
               >
-                <img
-                  alt="BTC"
-                  class="w-10 h-10"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCXlf-RKSoSz5NqJ8eegmAVjmZDAPrJG0dhM8JjFX6npC6Rsr8ORRrGc86fmdieDdNgzZoXouTdUEJxzDOQVLFCm-GY-_C-ReOMdOQCYGO4jzSNIvuy3vc1ggJSsrGv8lWByCbciuFA_1MGqGYm2gQdtmndyjjvVLvDO5wT8kD52ojojRlWUlKBtj9-8y0hRQsqULRP9mnFbFgc63m1qLH_tZ579PFBlx5msuDLHyqZNtMWmpvEkmTEvIl8_SrT9jL9VKJMI67SBQ"
-                />
+                <svg class="w-10 h-10" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none"> <circle cx="16" cy="16" r="16" fill="#F3BA2F"></circle> <path fill="#FFF" d="M12.116 14.404L16 10.52l3.886 3.886 2.26-2.26L16 6l-6.144 6.144 2.26 2.26zM6 16l2.26-2.26L10.52 16l-2.26 2.26L6 16zm6.116 1.596L16 21.48l3.886-3.886 2.26 2.259L16 26l-6.144-6.144-.003-.003 2.263-2.257zM21.48 16l2.26-2.26L26 16l-2.26 2.26L21.48 16zm-3.188-.002h.002V16L16 18.294l-2.291-2.29-.004-.004.004-.003.401-.402.195-.195L16 13.706l2.293 2.293z"></path> </g> </g></svg>
               </div>
               <span
                 class="font-headline font-bold text-lg group-hover:text-white transition-colors"
-                >Bitcoin</span
+                >Binance Coin</span
               >
               <span
                 class="text-on-surface-variant text-xs group-hover:text-white/70 transition-colors uppercase font-bold tracking-tighter"
-                >BTC</span
+                >BNB</span
               >
             </div>
             <!-- ETH -->
             <div
-              class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-primary transition-colors duration-500"
+              class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-purple-500 transition-colors duration-500"
             >
               <div
                 class="w-16 h-16 rounded-full bg-[#627eea]/10 flex items-center justify-center mb-4 group-hover:bg-white/20"
               >
-                <img
-                  alt="ETH"
-                  class="w-10 h-10"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq3RxsfcdHL4UKmbY6I6jDg8jH6O5DdHxY6yIGsEBecieLjVsTJuyl2OSonCn8KqkEuW2ucdVYqttnxjgmWrMLQ1zt5lf73sivUbd8CO70RwU-sYWr9HnHAxHJAtCFHYuz0b-Z8m-TLz7aU7AdBnYAZhAZdA95yEzIMnYMG14-z7z4KKXYRWmBbU7htgUzTeEfoyYmvoSGMqBnXkH4_DRufntP1IO6dICcDIaYNCin-uVTTdvTtfgaYSY0iJl-JxzXetgnRZDUi8E"
-                />
+                <svg class="w-10 h-10" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd"> <circle cx="16" cy="16" r="16" fill="#627EEA"></circle> <g fill="#FFF" fill-rule="nonzero"> <path fill-opacity=".602" d="M16.498 4v8.87l7.497 3.35z"></path> <path d="M16.498 4L9 16.22l7.498-3.35z"></path> <path fill-opacity=".602" d="M16.498 21.968v6.027L24 17.616z"></path> <path d="M16.498 27.995v-6.028L9 17.616z"></path> <path fill-opacity=".2" d="M16.498 20.573l7.497-4.353-7.497-3.348z"></path> <path fill-opacity=".602" d="M9 16.22l7.498 4.353v-7.701z"></path> </g> </g> </g></svg>
               </div>
               <span
                 class="font-headline font-bold text-lg group-hover:text-white transition-colors"
@@ -445,16 +500,12 @@
             </div>
             <!-- SOL -->
             <div
-              class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-primary transition-colors duration-500"
+              class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-gray-500 transition-colors duration-500"
             >
               <div
                 class="w-16 h-16 rounded-full bg-[#14f195]/10 flex items-center justify-center mb-4 group-hover:bg-white/20"
               >
-                <img
-                  alt="SOL"
-                  class="w-10 h-10"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxc1o-wZBE1oHdwaGT4L5fx8F-whSlw7xxlcvljvRO_6ts_KGBOr6JNpOcGnLlrZWdPom1dwjWo2UVzFTy3OdC1r1R5Um2wDz3y7B5EoDPiHetqABy685ImYiwJ1F8d49vvSuSxI8j_7_rGvEtC_nytwfZVjPO1ismb-bMncidSLyvxiiDcbVAWDHA3IDZHg9xgYb3-KEpgg6AyEOjfIWkD5TygVtvNRbDTmb2V-RzZFN8VpLiw_oEr9GoGkHEEQLuGOpBwssOBIw"
-                />
+                <svg class="w-10 h-10" fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm8.706 19.517H10.34a.59.59 0 00-.415.17l-2.838 2.815a.291.291 0 00.207.498H21.66a.59.59 0 00.415-.17l2.838-2.816a.291.291 0 00-.207-.497zm-3.046-5.292H7.294l-.068.007a.291.291 0 00-.14.49l2.84 2.816.07.06c.1.07.22.11.344.11h14.366l.068-.007a.291.291 0 00.14-.49l-2.84-2.816-.07-.06a.59.59 0 00-.344-.11zM24.706 9H10.34a.59.59 0 00-.415.17l-2.838 2.816a.291.291 0 00.207.497H21.66a.59.59 0 00.415-.17l2.838-2.815A.291.291 0 0024.706 9z"></path></g></svg>
               </div>
               <span
                 class="font-headline font-bold text-lg group-hover:text-white transition-colors"
@@ -467,16 +518,12 @@
             </div>
             <!-- USD (USDT/USDC) -->
             <div
-              class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-primary transition-colors duration-500"
+              class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-green-500 transition-colors duration-500"
             >
               <div
                 class="w-16 h-16 rounded-full bg-[#26a17b]/10 flex items-center justify-center mb-4 group-hover:bg-white/20"
               >
-                <img
-                  alt="USDT"
-                  class="w-10 h-10"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeMlkWxZ0Q2QyZETklNU-xedMDegpRncftbGmTQiCTThfJKphx7ggFFLHNicmpnuQ69BM-MZwOCvsFiKPoYUZM4w1KGFGQoTXggvMNEWhyeRUQqGcauUhpcaFba_OSBGZL4WXRwkLzoArzG6MBHBP6j3VxKOAgMgrW1q1tzdG4AjtJyo4NUSxWeyMwRYM9wimKki1mCAtACmtf14JBVlLOI-YWZQ0XnAMG9tqTgqReSgclhW4zYK2lbQTiyUIRQyvgo-NEqeVffA8"
-                />
+                <svg class="w-10 h-10" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd"> <circle cx="16" cy="16" r="16" fill="#26A17B"></circle> <path fill="#FFF" d="M17.922 17.383v-.002c-.11.008-.677.042-1.942.042-1.01 0-1.721-.03-1.971-.042v.003c-3.888-.171-6.79-.848-6.79-1.658 0-.809 2.902-1.486 6.79-1.66v2.644c.254.018.982.061 1.988.061 1.207 0 1.812-.05 1.925-.06v-2.643c3.88.173 6.775.85 6.775 1.658 0 .81-2.895 1.485-6.775 1.657m0-3.59v-2.366h5.414V7.819H8.595v3.608h5.414v2.365c-4.4.202-7.709 1.074-7.709 2.118 0 1.044 3.309 1.915 7.709 2.118v7.582h3.913v-7.584c4.393-.202 7.694-1.073 7.694-2.116 0-1.043-3.301-1.914-7.694-2.117"></path> </g> </g></svg>
               </div>
               <span
                 class="font-headline font-bold text-lg group-hover:text-white transition-colors"
@@ -505,7 +552,7 @@
               >
             </div>
           </div>
-          <div class="mt-20 relative rounded-[3rem] overflow-hidden">
+          <!-- <div class="mt-20 relative rounded-[3rem] overflow-hidden">
             <div
               class="absolute inset-0 primary-gradient opacity-90 z-10"
             ></div>
@@ -533,7 +580,7 @@
                 Get the Guide
               </button>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <!-- Contact Us Section -->
@@ -551,23 +598,6 @@
                 with us directly on WhatsApp for instant support.
               </p>
               <div class="space-y-8">
-                <div class="flex items-center gap-4">
-                  <div
-                    class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary"
-                  >
-                    <span class="material-symbols-outlined">mail</span>
-                  </div>
-                  <div>
-                    <p
-                      class="text-xs font-bold uppercase tracking-widest text-on-surface-variant"
-                    >
-                      Email Us
-                    </p>
-                    <p class="text-lg font-headline font-bold">
-                      support@bliss.exchange
-                    </p>
-                  </div>
-                </div>
                 <div class="flex items-center gap-4">
                   <div
                     class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary"
@@ -588,58 +618,36 @@
             <div
               class="lg:w-1/2 bg-surface p-12 lg:p-20 border-l border-outline-variant/15"
             >
-              <form
-                action="https://wa.me/yourwhatsappnumber"
-                class="space-y-6"
-                method="GET"
-              >
-                <div class="space-y-2">
-                  <label
-                    class="text-sm font-bold text-on-surface-variant font-label"
-                    >Your Full Name</label
-                  >
-                  <input
-                    class="w-full px-6 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary-container/40 transition-all outline-none"
-                    placeholder="John Doe"
-                    type="text"
-                  />
-                </div>
-                <div class="space-y-2">
-                  <label
-                    class="text-sm font-bold text-on-surface-variant font-label"
-                    >Subject</label
-                  >
-                  <select
-                    class="w-full px-6 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary-container/40 transition-all outline-none appearance-none"
-                  >
-                    <option>Buy Crypto</option>
-                    <option>Sell Crypto</option>
-                    <option>Technical Support</option>
-                    <option>Partnership</option>
-                  </select>
-                </div>
-                <div class="space-y-2">
-                  <label
-                    class="text-sm font-bold text-on-surface-variant font-label"
-                    >Message</label
-                  >
-                  <textarea
-                    class="w-full px-6 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary-container/40 transition-all outline-none resize-none"
-                    placeholder="How can we help you today?"
-                    rows="4"
-                  ></textarea>
-                </div>
-                <button
-                  class="w-full primary-gradient text-on-primary py-5 rounded-xl font-headline font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all group"
-                  type="submit"
+              <div class="flex flex-col gap-6">
+                <!-- WhatsApp Button -->
+                <a
+                  href="https://wa.me/08106422970"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white py-5 rounded-xl font-headline font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-green-500/20 hover:shadow-green-500/30 transition-all group"
                 >
-                  Send via WhatsApp
-                  <span
-                    class="material-symbols-outlined group-hover:scale-110 transition-transform"
-                    >send</span
-                  >
-                </button>
-              </form>
+                  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#25d366"></rect><path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z"></path><path fill="#ffffff" d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"></path></g></svg>
+                  WhatsApp
+                </a>
+                <!-- Telegram Button -->
+                <a
+                  href="https://t.me/Bliss4pf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full bg-[#0088cc] hover:bg-[#006fa3] text-white py-5 rounded-xl font-headline font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-blue-500/20 hover:shadow-blue-500/30 transition-all group"
+                >
+                  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" aria-label="Telegram" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#37aee2"></rect><path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144"></path><path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34"></path><path fill="#f6fbfe" d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"></path></g></svg>
+                  Telegram
+                </a>
+                <!-- Gmail Button -->
+                <a
+                  href="mailto:blissexchangesupport@gmail.com"
+                  class="w-full bg-[#EA4335] hover:bg-[#d33c2c] text-white py-5 rounded-xl font-headline font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-red-500/20 hover:shadow-red-500/30 transition-all group"
+                >
+                  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#ffffff"></rect><path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#4285f4"></path><path d="M 154 248l102 77l102-77v-98l-102 77l-102-77" fill="#ea4335"></path><path d="M354 391v-142l82-63V361q0 30-30 30" fill="#34a853"></path><path d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26" fill="#c5221f"></path><path d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26" fill="#fbbc04"></path></g></svg>
+                  Gmail
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -659,11 +667,11 @@
           <p
             class="font-['Manrope'] text-sm text-[#5c5b5b] dark:text-[#aeadac]"
           >
-            © 2024 Bliss Exchange. Precision Radiance in Crypto.
+            © <span id="year">2026</span> Bliss Exchange. Precision Radiance in Crypto.
           </p>
         </div>
         <div class="flex flex-wrap justify-center gap-8">
-          <a
+          <!-- <a
             class="font-['Manrope'] text-sm text-[#5c5b5b] hover:text-[#a13900] underline decoration-[#feb700] transition-opacity"
             href="#"
             >Privacy Policy</a
@@ -682,7 +690,7 @@
             class="font-['Manrope'] text-sm text-[#5c5b5b] hover:text-[#a13900] underline decoration-[#feb700] transition-opacity"
             href="#"
             >Status</a
-          >
+          > -->
         </div>
         <div class="flex gap-4">
           <div
@@ -700,5 +708,64 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Set dynamic year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const closeMobileMenuBtn = document.getElementById('closeMobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+      });
+      
+      closeMobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+      });
+
+      // Smooth scroll for navbar links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href !== '#' && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({
+              behavior: 'smooth'
+            });
+            // Close mobile menu if open
+            if (mobileMenu && !mobileMenu.classList.contains('translate-x-full')) {
+              mobileMenu.classList.add('translate-x-full');
+            }
+          }
+        });
+      });
+
+      // Update active nav link on scroll
+      window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('a[href^="#"]');
+        
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('border-b-2', 'border-[#feb700]', 'pb-1', 'text-[#a13900]');
+          link.classList.add('text-[#5c5b5b]', 'hover:text-[#a13900]');
+          
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.remove('text-[#5c5b5b]', 'hover:text-[#a13900]');
+            link.classList.add('border-b-2', 'border-[#feb700]', 'pb-1', 'text-[#a13900]');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
